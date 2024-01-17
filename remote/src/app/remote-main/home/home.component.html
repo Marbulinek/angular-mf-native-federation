@@ -1,0 +1,17 @@
+    <div class="home-wrapper">
+        This is content of separated <strong>remote</strong> application running on port 4201
+        <p>New content 123 - REMOTE</p>
+    </div>
+    
+    <button (click)="printValue()">PRINT VALUE</button>
+    {{this.btnValue}}
+
+
+    <p>test 123</p>
+
+    <div>Address model cache test</div>
+    <ul>
+        <ul *ngFor="let address of (this.addresses$ | async)">
+            <li>{{address.name}}</li>
+        </ul>
+    </ul>
