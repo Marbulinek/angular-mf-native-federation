@@ -5,7 +5,6 @@ module.exports = withNativeFederation({
   name: 'remote',
 
   exposes: {
-    './component': './src/app/app.module.ts',
     './remoteModule': './src/app/remote-main/remote-main.module.ts'
   },
 
